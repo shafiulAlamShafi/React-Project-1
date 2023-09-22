@@ -1,0 +1,16 @@
+.nav-menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-list {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+}
+.nav-list li {
+    margin-left: 20px;
+}
+footer {
+    text-align: center;
+}
