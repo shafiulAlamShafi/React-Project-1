@@ -3,6 +3,9 @@
     align-items: center;
     justify-content: space-between;
 }
+.nav-menu img {
+    width: 50px;
+}
 .nav-list {
     display: flex;
     list-style-type: none;
@@ -13,4 +16,30 @@
 }
 footer {
     text-align: center;
+    position: fixed;
+    bottom: 60px;
+    left: 30%;
+    font-size:20px;
+}
+img {
+    width: 100%; display: block;
+}
+.about-me {
+    border: 12px solid rgb(126, 65, 65);
+    width: 300px;
+    margin: auto;
+}
+.name-section {
+    text-align: center;  
+}
+.btn {
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.contact {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
 }

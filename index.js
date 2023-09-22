@@ -51,10 +51,39 @@ function MainComponent() {
   );
 }
 
+function Button(props) {
+  const { color } = props;
+  return (
+    <button className="btn" style={{ backgroundColor: props.color }}>
+      {props.children}
+    </button>
+  );
+}
+
+function AboutMe() {
+  return (
+    <section className="about-me">
+      <div>
+        <img src="./images/OIP.jpg" alt="my logo" width="300px" />
+      </div>
+      <div className="name-section">
+        <h2>Md Shafiul Alam</h2>
+        <p>Frontend Developer</p>
+        <p>Dhaka, Bangladesh</p>
+      </div>
+      <div className="contact">
+        <Button color="lightblue">Email</Button>
+        <Button color="aqua"> Linkedin</Button>
+      </div>
+    </section>
+  );
+}
+
 ReactDOM.render(
   <div>
     <Header></Header>
     <MainComponent></MainComponent>
+    <AboutMe></AboutMe>
     <Footer></Footer>
   </div>,
   document.getElementById("root")
